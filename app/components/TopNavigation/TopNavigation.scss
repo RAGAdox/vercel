@@ -1,0 +1,19 @@
+.main-nav-container {
+  .nav-container {
+    @apply fixed w-min top-0 left-0 right-0 mx-auto hidden md:flex flex-row self-center gap-x-4 my-2 border border-white/15 rounded-full backdrop-blur-3xl bg-slate-400/50 z-50 transition-colors;
+  }
+
+  .nav-item-active {
+    @apply border rounded-full bg-slate-100/90 text-gray-900;
+  }
+
+
+
+  .nav-item {
+    @apply hover:bg-white/30 rounded-full transition duration-300 px-2 py-1;
+
+    &.nav-item-active:hover {
+      @apply bg-slate-100/90
+    }
+  }
+}

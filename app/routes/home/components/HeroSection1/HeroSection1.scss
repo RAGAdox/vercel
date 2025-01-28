@@ -1,0 +1,44 @@
+.home-section-1 {
+  @apply flex flex-col h-svh items-center justify-center font-serif gap-y-4 md:snap-start;
+
+  .image-container {
+    @apply flex flex-col items-center;
+
+    .image {
+      @apply w-1/5 rounded-full;
+    }
+
+    .pill-banner {
+      @apply flex items-center gap-x-3 rounded-lg border border-white/25 bg-black;
+
+      .active {
+        @apply w-1 h-1 bg-green-700 rounded-full ml-2;
+      }
+
+      .pill-text {
+        @apply text-sm mr-2
+      }
+    }
+  }
+
+  .introduction-container {
+    @apply flex flex-col px-1 md:w-1/3 items-center;
+
+    .name {
+      @apply text-3xl
+    }
+
+    .role {
+      @apply text-xl
+    }
+
+    .summary {
+      @apply font-sans m-1 text-base text-center;
+    }
+  }
+
+  .home-section-1-cta {
+    @apply bg-slate-100 px-4 py-2 rounded-lg text-slate-900 hover:bg-slate-100/75;
+  }
+
+}

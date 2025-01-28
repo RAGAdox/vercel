@@ -1,0 +1,12 @@
+.background {
+  @apply fixed inset-0;
+
+  .star {
+    @apply fixed bg-slate-50 w-[1px] h-[1px] rounded-full -z-50;
+  }
+
+  .circle {
+    @apply fixed border border-green-700 rounded-full -z-50;
+  }
+
+}
