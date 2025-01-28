@@ -6,6 +6,10 @@
       "dest": "/favicon.ico"
     },
     {
+      "src": "/registerSW.js",
+      "dest": "/registerSW.js"
+    },
+    {
       "src": "/assets/(.*)",
       "dest": "/assets/$1",
       "headers": {
