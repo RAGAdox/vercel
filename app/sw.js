@@ -5,6 +5,7 @@ cleanupOutdatedCaches();
 
 // Precache static assets
 const precacheList = self.__WB_MANIFEST;
+console.log( "precacheList ", precacheList )
 precacheList.push( { url: "/", revision: null } );
 
 precacheAndRoute( precacheList );
