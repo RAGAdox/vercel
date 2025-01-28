@@ -51,26 +51,26 @@ export default defineConfig(({ isSsrBuild, command }) => ({
         categories: ["personal", "portfolio", "resume", "cv"],
         icons: [
           {
-            src: "/apple-touch-icon-precomposed-192x192.png",
+            src: "/assets/apple-touch-icon-precomposed-192x192.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "/apple-touch-icon-precomposed-512x512.png",
+            src: "/assets/apple-touch-icon-precomposed-512x512.png",
             sizes: "512x512",
             type: "image/png",
           },
         ],
         screenshots: [
           {
-            src: "/screenshot-desktop.png",
+            src: "/assets/screenshot-desktop.png",
             platform: "web",
             sizes: "2560x1664",
             form_factor: "wide",
             label: "Home Page",
           },
           {
-            src: "/screenshot-mobile.png",
+            src: "/assets/screenshot-mobile.png",
             platform: "web",
             sizes: "750x1334",
             form_factor: "narrow",
