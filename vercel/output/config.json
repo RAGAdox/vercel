@@ -10,6 +10,14 @@
       "dest": "/registerSW.js"
     },
     {
+      "src": "/sw.js",
+      "dest": "sw.js"
+    },
+    {
+      "src": "/manifest.webmanifest",
+      "dest": "/manifest.webmanifest"
+    },
+    {
       "src": "/assets/(.*)",
       "dest": "/assets/$1",
       "headers": {
