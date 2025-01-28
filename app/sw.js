@@ -1,10 +1,22 @@
 import { cleanupOutdatedCaches, precacheAndRoute } from "workbox-precaching";
 
+function removeDuplicateUrls( data ) {
+  const seenUrls = new Set();
+  return data.filter( item => {
+    if ( seenUrls.has( item.url ) ) {
+      return false;
+    }
+    seenUrls.add( item.url );
+    return true;
+  } );
+}
+
 // Clean any old caches
 cleanupOutdatedCaches();
 
 // Precache static assets
-const precacheList = self.__WB_MANIFEST;
+
+const precacheList = removeDuplicateUrls( self.__WB_MANIFEST )
 console.log( "precacheList ", precacheList )
 precacheList.push( { url: "/", revision: null } );
 
